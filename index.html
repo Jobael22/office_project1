@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Machines</title>
   </head>
   <body>
-    <button class="btn1"><h1>Odata Machine</h1></button>
-    
-    <table border="1" id="tab1">
-      <thead>
-        <th>Id</th>
-        <th>Hall_Id</th>
-        <th>Machine_group_id</th>
-        <th>Cost_center_id</th>
-        <th>Custom_id</th>
-      </thead>
-      <tbody id="machinesData"></tbody>
-    </table>
+    <h1>Machines</h1>
+    <button onclick="myFunction()" class="btn1">
+      <h1 class="t1">Machine Data:</h1>
+    </button>
 
-    <button class="btn2"><h1>Odata</h1></button>
-    <table border="1" id="tab2">
-      <thead>
-        <th>Name</th>
-        <th>Kind</th>
-        <th>Url</th>    
-      </thead>
-      <tbody id="Data"></tbody>
-    </table>
+    <a href="http://192.168.1.231:8051/odata/Machines"
+      >http://192.168.1.231:8051/odata/Machines</a
+    >
+
+    <div id="div1">
+      <table border="1" id="tab1">
+        <thead>
+          <th>Id</th>
+          <th>Hall_Id</th>
+          <th>Machine_group_id</th>
+          <th>Cost_center_id</th>
+          <th>Custom_id</th>
+        </thead>
+        <tbody id="machinesData"></tbody>
+      </table>
+    </div>
+
+    <button onclick="myFunction2()" class="btn2">
+      <h1 class="t1">Machine Group:</h1>
+    </button>
+    <a href="http://192.168.1.231:8051/odata"
+      >http://192.168.1.231:8051/odata</a
+    >
+    
+    <div id="div2" style="display: none">
+      <table border="1" id="tab2">
+        <thead>
+          <th>Name</th>
+          <th>Kind</th>
+          <th>Url</th>
+        </thead>
+        <tbody id="Data"></tbody>
+      </table>
+    </div>
 
     <script src="script.js"></script>
   </body>
