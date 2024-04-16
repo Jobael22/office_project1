@@ -16,6 +16,14 @@ async function callAPi() {
     .join("");
 }
 callAPi();
+function myFunction() {
+  let x = document.getElementById("div1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 async function callAPi2() {
   let result = await fetch("http://192.168.1.231:8051/odata/");
@@ -33,3 +41,11 @@ async function callAPi2() {
     .join("");
 }
 callAPi2();
+function myFunction2() {
+  let x = document.getElementById("div2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
