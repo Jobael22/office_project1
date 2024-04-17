@@ -13,44 +13,45 @@
     <title>Machines</title>
   </head>
   <body>
-    <h1>Machines</h1>
-    <button onclick="myFunction()" class="btn1">
-      <h1 class="t1">Machine Data:</h1>
-    </button>
+    <h1 id="header">Machines</h1>
+    <div class="container">
+      <button onclick="myFunction()" class="btn1" id="primaryButton">
+        <h1 class="t1">Machine Data</h1>
+      </button>
 
-    <a href="http://192.168.1.231:8051/odata/Machines"
-      >http://192.168.1.231:8051/odata/Machines</a
-    >
-
-    <div id="div1">
-      <table border="1" id="tab1">
-        <thead>
-          <th>Id</th>
-          <th>Hall_Id</th>
-          <th>Machine_group_id</th>
-          <th>Cost_center_id</th>
-          <th>Custom_id</th>
-        </thead>
-        <tbody id="machinesData"></tbody>
-      </table>
+      <button onclick="myFunction2()" class="btn2" id="secondaryButton">
+        <h1 class="t1">Machine Group</h1>
+      </button>
     </div>
 
-    <button onclick="myFunction2()" class="btn2">
-      <h1 class="t1">Machine Group:</h1>
-    </button>
-    <a href="http://192.168.1.231:8051/odata"
-      >http://192.168.1.231:8051/odata</a
-    >
-    
-    <div id="div2" style="display: none">
-      <table border="1" id="tab2">
-        <thead>
-          <th>Name</th>
-          <th>Kind</th>
-          <th>Url</th>
-        </thead>
-        <tbody id="Data"></tbody>
-      </table>
+    <div class="table">
+      <div id="div1">
+        <table border="1" id="tab1">
+          <thead>
+            <a href="http://192.168.1.231:8051/odata/Machines"
+              ><h2>Machine Data</h2></a
+            >
+            <th>Id</th>
+            <th>Hall_Id</th>
+            <th>Machine_Group_Id</th>
+            <th>Cost_Center_Id</th>
+            <th>Custom_Id</th>
+          </thead>
+          <tbody id="machinesData"></tbody>
+        </table>
+      </div>
+
+      <div id="div2" style="display: none">
+        <table border="1" id="tab2">
+          <thead>
+            <a href="http://192.168.1.231:8051/odata"><h2>Machine Group</h2></a>
+            <th>Name</th>
+            <th>Kind</th>
+            <th>Url</th>
+          </thead>
+          <tbody id="Data"></tbody>
+        </table>
+      </div>
     </div>
 
     <script src="script.js"></script>
