@@ -40,12 +40,38 @@ async function callAPi2() {
     )
     .join("");
 }
+
 callAPi2();
+
 function myFunction2() {
   let x = document.getElementById("div2");
   if (x.style.display === "none") {
+    
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
 }
+
+// const primary = document.getElementById('primaryButton');
+// const secondary = document.getElementById('secondaryButton');
+
+// function somePrimaryAction(e){
+//   e.preventDefault();
+//   console.log('you clicked the primary button');
+// }
+
+// function someSecondaryFunction(e){
+//   e.preventDefault();
+//   console.log('you clicked the secondary button');
+//   primary.click();
+// }
+
+// primary.addEventListener("click", somePrimaryAction, false);
+// secondary.addEventListener("click", someSecondaryFunction, false);
+
+
+
+
+
+
